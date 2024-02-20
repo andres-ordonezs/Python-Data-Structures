@@ -28,3 +28,28 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
           ...
         ValueError: Invalid Operation
     """
+    valid_operations = ['add', 'subtract', 'multiply', 'divide']
+    if operation not in valid_operations:
+        raise ValueError('Invalid Operation')
+
+    if operation == 'add':
+        if make_int:
+            return f'{message} {int(a + b)}'
+        else:
+            return f'{message} {(a + b)}'
+    elif operation == 'subtract':
+                if make_int:
+                    return f'{message} {int(a - b)}'
+                else:
+                    return f'{message} {(a - b)}'
+    elif operation == 'multiply':
+                if make_int:
+                    return f'{message} {int(a * b)}'
+                else:
+                    return f'{message} {(a * b)}'
+    elif operation == 'divide':
+                if make_int:
+                    return f'{message} {int(a / b)}'
+                else:
+                    return f'{message} {(a / b)}'
+

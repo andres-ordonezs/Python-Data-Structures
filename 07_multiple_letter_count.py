@@ -8,7 +8,7 @@ def multiple_letter_count(phrase):
         {'Y': 1, 'a': 1, 'y': 1}
     """
     letters = {}
-
+    # look at solution get()
     for letter in phrase:
         if letter in letters:
             letters[letter] += 1

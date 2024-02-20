@@ -11,6 +11,7 @@ def flip_case(phrase, to_swap):
         'AaaaHHH'
 
     """
+    # look up swapcase method
     response = ""
     phrase = list(phrase)
 
