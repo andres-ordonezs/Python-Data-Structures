@@ -40,7 +40,7 @@ def list_manipulation(lst, command, location, value=None):
         >>> list_manipulation(lst, 'add', 'dunno') is None
         True
     """
-
+    # use double equals instead of is
     if command is "add":
         if location == "beginning":
             lst.insert(0, value)
